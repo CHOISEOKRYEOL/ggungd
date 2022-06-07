@@ -2,9 +2,10 @@ const express = require('express')
 const app = express()
 const PORT = 8001
 app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
+const a = app.set('view engine', 'ejs');
+console.log(a);
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index.ejs')
 })
 app.listen(PORT, () => {
     console.log(`server started on PORT ${PORT}`)
