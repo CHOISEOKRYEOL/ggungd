@@ -1,7 +1,6 @@
 const express = require('express');
 const app = express();
 const PORT = 8001;
-app.use(Express.static(__dirname+'/public'));
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
