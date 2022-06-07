@@ -2,8 +2,6 @@ const express = require('express');
 const app = express();
 const PORT = 8001;
 
-const path = require('path');
-app.set('views', path.join(__dirname + '/home/hosting_users/getwis88/apps/getwis88_ggungd'));
 app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
   res.render('index');
