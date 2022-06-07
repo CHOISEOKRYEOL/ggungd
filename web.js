@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const PORT = 8001
 app.set('views', __dirname + '/views');
-app.set('view engine', 'index')
+app.set('view engine', 'index.ejs')
 app.get('/', (req, res) => {
   res.render('index')
 })
