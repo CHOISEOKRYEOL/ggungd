@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const PORT = 8001;
+app.use('/', express.static("./views"))
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.get('/', (req, res) => {
