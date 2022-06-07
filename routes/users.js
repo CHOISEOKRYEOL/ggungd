@@ -3,11 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  fs.readFile('/home/hosting_users/getwis88/apps/ggungd/public/js/example.json', (err, data) => {
-    if(err) throw err;
-    const results = JSON.parse(data.toString('utf8'));
-    res.render('index', { title:"WEB Designer", results });
-  });
+  res.send('respond with a resource');
 });
 
 module.exports = router;
