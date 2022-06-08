@@ -3,7 +3,7 @@ const app = express();
 const PORT = 8001;
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
-app.use('/', express.static("/imges"));
+app.use('/', express.static("/images"));
 app.get('/', (req, res) => {
   res.render('index');
 });
