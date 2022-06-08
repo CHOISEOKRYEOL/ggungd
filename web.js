@@ -9,9 +9,7 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', (req, res) => {
   res.render('index');
 });
-app.get('/', (req, res) => {
-  res.render('images');
-});
+
 app.listen(PORT, () => {
     console.log(`server started on PORT ${PORT}`);
 });
