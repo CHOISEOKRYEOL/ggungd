@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square-round.css" rel="stylesheet">
-    <link rel="stylesheet" href="./stylesheets/reset.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./stylesheets/style.css">
-    <script src="./main.js"></script>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./stylesheets/style.css">
+    <script defer src="./javascripts/main.js"></script>
     <title>GGungd</title>
 </head>
 <body>
@@ -25,12 +25,16 @@
                     </div>
                     <div class="nav">
                         <ul>
-                            <li class="story"><a href="#">브랜드 스토리111</a></li>
-                            <li class="diplay"><a href="#">3분할 좌판</a></li>
-                            <li class="content"><a href="#">제품상세</a></li>
-                            <li class="contact"><a href="#">Q&A</a></li>
-                            <li class="buy"><a href="https://www.sada5.com/">구매</a></li>
-                            <li class="blog"><a href="https://blog.naver.com/ggungd05">블로그</a></li>
+                            <li class="item one" data-link="#section_story">브랜드 스토리</li>
+                            <li class="item two" data-link="#division">3분할 좌판</li>
+                            <li class="item three" data-link="#product_detail">제품상세</li>
+                            <li class="item four" data-link="#qAnda">Q&A</li>
+                        </ul>
+                    </div>
+                    <div class="link">
+                        <ul>
+                            <li class="item"><a href="https://www.sada5.com/" target="_blank">구매</a></li>
+                            <li class="item"><a href="https://blog.naver.com/ggungd05" target="_blank">블로그</a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,16 +42,16 @@
         </div>
     </header>
     <!-- //header -->
-    
+
     <!-- section_story -->
     <section id="section_main">
         <div class="container">
             <div class="row">
                 <div class="section_main">
                     <div class="main_left">
-                        <div class="title">GGUNG.D</div>
+                        <div class="title">꿍디</div>
                         <div class="content">
-                            <span class="top">자기주도형 의자 꿍디,<br><br>아이 스스로 바른자세를 찾아가요.</span>
+                            <span class="top">바른자세의 시작.<br><br>아이 스스로 바른자세를 찾아가요.</span>
                         </div>
                     </div>
                     <div class="main_center">
@@ -76,20 +80,21 @@
     <div id="brand_text">
         <div class="container">
             <div class="row">
-                <div class="brand_text"><span class="brand_text">브랜드 스토리</span></div>
+                <div class="brand_text"><span class="brand_text">브랜드 스토리</span><br><br>
+                    <span class="title">ABOUT GGUNG.D</span>
+                </div>
+                <div class=""><span class="title"></span></div>
             </div>
         </div>
     </div>
 
     <!-- brand_story -->
-    <div id="section_story">
+    <div id="brand_story" class="location">
         <div class="container">
             <div class="row">
-                <div class="section_story">
+                <div class="brand_story">
                     <section class="story_left">
-                        <div class="left_title"><span class="title">기존 어린이 의자의 패러다임을 바꾸다.</span></div>
-                        <div class="left_content"><span class="content">about ggung.d</span></div>
-                        <img src="./images/브랜드스토리아이사진.png" alt="">
+                        <span>GGUNG.D</span>
                     </section>
                     <section class="story_right">
                         <div class="right_top">
@@ -98,22 +103,14 @@
                                     <b>'내 아이'</b>가 앉기만 해도 자연스럽게 <br><br> 올바른 자세를 찾아갈 수 없을까?
                                 </div>
                                 <div class="two">
-                                    꿍디의 시작이었고, <br><br> <b>6년이라는 시간</b>이 걸렸습니다.
-                                </div>
-                                <div class="three">
-                                    성장기의 어린이 <b>183명의 자세</b>를 <br><br> 최적으로 맞추려는 다양한 시도 끝에 찾은 답.
+                                    아이를 생각하는 마음으로 첫걸음을 내딛었습니다.<br><br>
+                                    <b>
+                                    .<br><br>
+                                    .<br><br><br>
+                                    </b>
+                                    바른자세의 시작, 꿍디
                                 </div>
                             </div>
-                        </div>
-                        <div class="right_middle">
-                            <img src="./images/브랜드스토리 여는따옴표.png" alt="open" class="open">
-                            <span>3분할 좌판</span>
-                            <img src="./images/브랜드스토리 닫는따옴표.png" alt="close" class="close">
-                        </div>
-                        <div class="right_bottom">
-                            <img src="./images/브랜드스토리 x.png" alt="x" class="x">
-                            <span>꿍디는 기능성의 원리를 <br><br> 등받이가 아닌 <br><br> <b>좌판</b>에서 찾았습니다.</span>
-                            <img src="./images/브랜드스토리 동그라미.png" alt="o" class="o">
                         </div>
                     </section>
                 </div>
@@ -122,34 +119,21 @@
     </div>
     <!-- //brand_story -->
 
-    <!-- LOGO -->
-    <div id="logo_text">
-        <div class="container">
-            <div class="row">
-                <div class="logo_text">logo</div>
-            </div>
-        </div>
-    </div>
-    <!-- //LOGO -->
-
     <!-- logo_concept -->
     <div id="logo_concept">
         <div class="container">
             <div class="row">
                 <div class="logo_concept">
                     <div class="concept_left">
-                        <div><span class="title">컨셉</span></div>
+                        <div><span class="title">LOGO</span></div>
                         <div class="description">
-                            <div class="description_title">
-                                <span class="one">컨셉설명</span><br><br>
-                                <span class="two">귀여움, 부드러움, 편안함, 친근함, 아이들, 건강</span>
-                            </div>
-                            <div class="content">성장기 어린이들의 바른자세와 편안함을 위한 삼분할 의자라는 서비스 의의에 맞게<br><br>
-                            어린이에 적합한 귀여운 색상과 둥근 모듈을, 바른자세와 편안함이라는 키워드에 적합한<br><br> 건강과 관련된, 친근한 색상을 활용했습니다.
+                            <div class="content">
+                            <b>컨셉</b><br><br>
+                            성장기 어린이들의 바른자세와 편안함을 위한 삼분할 의자라는 서비스 의의에 맞게<br><br>
+                            어린이에 적합한 귀여운 색상과 둥근 모듈을, 바른자세와 편안함이라는 키워드에 <br><br> 적합한 건강과 관련된, 친근한 색상을 활용했습니다.
                             </div>
                         </div>
                         <div class="color">
-                            <div class="color_title"><span>색상</span></div><br>
                             <div class="color_content">
                                 <div class="blue">
                                     <div class="code">#426bff</div>
@@ -193,13 +177,13 @@
                         <div class="right_title">
                             <span>형태</span>
                             <div class="korea_logo">
-                                <div class="korea_title">한글로고</div><br>
+                                <div class="korea_title"><b>한글</b></div><br>
                                 <div class="korea_content">굵기를 조절해 통통한 그립감을 주었으며,<br><br>
-                                글자 위에 얹어진 선으로 꿍디의 컨셉인 엉덩이 형태를 의도했습니다.
+                                글자 위의 선으로 컨셉인 엉덩이 형태를 의도했습니다.
                                 </div>
                             </div>
                             <div class="eng_logo">
-                                <div class="eng_title">영문로고</div><br>
+                                <div class="eng_title"><b>영문</b></div><br>
                                 <div class="eng_content">G를 반전시켜 엉덩이 형태를 띄게 해<br><br>
                                 꿍디의 컨셉인 엉덩이 형태를 살려 제작했습니다.<br><br>
                                 종류는 메인로고와 서브로고 두가지입니다.
@@ -213,6 +197,35 @@
     </div>
     <!-- //logo_image -->
 
+    <div id="paradigm">
+        <div class="container">
+            <div class="row">
+                <div class="paradigm">
+                    <div class="title">
+                        기존 어린이 의자의 패러다임을 바꾸다.
+                    </div>
+                    <div class="img">
+                        <img src="./images/2-1 뒤 움짤.gif" alt="img">
+                    </div>
+                    <div class="content">
+                        성장기의 어린이 183명의 자세를<br><br><br>
+                        최적으로 맞추려는 다양한 시도 끝에 찾은 답.
+                    </div>
+                    <div class="display_top">
+                        <img src="./images/브랜드스토리 여는따옴표.png" alt="open" class="open">
+                        <span>3분할 좌판</span>
+                        <img src="./images/브랜드스토리 닫는따옴표.png" alt="close" class="close">
+                    </div>
+                    <div class="display_bottom">
+                        <img src="./images/브랜드스토리 x.png" alt="x" class="x">
+                        <span>꿍디는 기능성의 원리를 <br><br> 등받이가 아닌 <br><br> <b>좌판</b>에서 찾았습니다.</span>
+                        <img src="./images/브랜드스토리 동그라미.png" alt="o" class="o">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- logo_line -->
     <div id="logo_line">
         <div class="container">
@@ -224,21 +237,22 @@
     <!-- //logo_line -->
 
     <!-- three division -->
-    <div id="division">
+    <div id="division" class="location">
         <div class="container">
             <div class="row">
                 <div class="division">
                     <div class="left">
                         <div class="head_title">3분할 좌판</div>
-                        <div class="middle_title">등받이엔 항상 기대어 있지 않지만, 좌판에는 항상 앉아있습니다.<br><br><br>
-                            <b>꿍디만의 3분할 좌판</b>
-                        </div>
-                        <div class="content">
-                            <span class="title">좌우 유동 좌판 2개, 고정 좌판 1개로 이루어진 좌판</span><br><br><br><br>
-                            <span class="content">
-                            *착석 자세의 움직임에 따라 척추 및 요추의 잘못된 위치 이동을 막아 줌으로써,<br>
-                            척추 측만증 등의 질환을 줄여주는 데 도움을 줄 수 있는 특허 제품
-                            </span>
+                        <div class="middle_title">등받이는 항상 기대어 있지 않지만, 좌판에는 항상 앉아있습니다.</div>
+                        <div class="bottom_title">
+                            <div class="title">3분할 좌판이란?</div>
+                            <div class="content">좌우 유동 좌판 2개, 고정 좌판 1개로 이루어진 좌판으로,<br><br> 
+                                골반의 후방 회전을 감소시켜 장시간 착석 시 요추의 불편함이나<br><br>
+                                통증을 감소시킬 수 있는 가능성을 보여주었으며,<br><br>
+                                잘못된 자세 시 이를 보완하기 위한 근육 사용량을 증가시켜<br><br>
+                                바른 자세로 유도 하는 효과도 기대할 수 있다.<br><br><br><br>
+                                <span class="note">※ [논문참조] 근전도, 동작분석 및 설문 기법을 활용한 3분할 유동좌판(v.2.0)의 효과성 분석</span>    
+                            </div>
                         </div>
                     </div>
                     <div class="right">
@@ -260,7 +274,7 @@
                         <div class="left">
                             <span>허리는 요추의 <b>C 라인</b>이 유지될 때 좋은 자세가 됩니다.<br><br>
                             하지만, <b>앉을 때 골반이 회전하며</b><br><br>
-                            <b>요추가 일직선</b>으로 퍼지게 됩니다.<br><br><br><br><br>
+                            <b>요추가 일직선</b>으로 퍼지게 됩니다.<br><br><br>
                             바로 이런 것들이 불편함의 이유이자<br><br>
                             <b>아이들이 장시간 앉아있지 못하는 이유</b>입니다.
                             </span>
@@ -304,16 +318,17 @@
         <div class="container">
             <div class="row">
                 <div class="patent">
-                    <div class="title"><span>특허청 등록</span></div>
+                    <div class="title"><span>특허</span></div>
                     <div class="content">
                         <div class="left">
                             <img src="./images/3분할좌판-특허청등록-다우스, 한양대 로고.png" alt="hanyang">
                         </div>
                         <div class="right">
                             <span>다우스는 답을 찾기 위해<b> 한양대 인체공학 연구소</b>와<br><br>
-                            수년간 <b>공동개발</b>에 최선을 다해왔습니다.<br><br><br><br>
-                            <b>척추질환 예방</b>과 <b>요추 교정</b> 기능을 고려한 놀라운 기능.<br><br>
-                            <b>특허청에 등록</b>된 인체 공학적 <b>3분할 좌판 의자</b>
+                            수년간 <b>공동개발</b>에 최선을 다해왔습니다.<br><br><br>
+                            <b>특허청에 등록</b>된 인체 공학적 <b>3분할 좌판 의자</b><br><br><br>
+                            <span class="note">※ 다우스는 꿍디의 제조사입니다.&nbsp;&nbsp;[MADE IN KOREA]
+                            </span>
                             </span>
                         </div>
                     </div>
@@ -326,76 +341,81 @@
     </div>
     <!-- //patent -->
 
+    <!-- logo_line -->
+    <div id="product_line">
+        <div class="container">
+            <div class="row">
+                <div class="product_line"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //logo_line -->
+
     <!-- product_detail -->
-    <div id="product_detail">
+    <div id="product_detail" class="location">
         <div class="container">
             <div class="row">
                 <div class="product_detail">
-                    <div class="head_title"><span>제품 상세</span></div>
                     <div class="product">
-                        <div class="title"><span>제품</span></div>
+                        <div class="title"><span>제품 상세</span></div>
+                        <div class="s_title">제품 사진</div>
                         <div class="picture">
                             <img src="./images/제품상세-의자상세사진.png" alt="chair">
                         </div>
                     </div>
                     <div class="color">
-                        <div class="title"><span>색상</span></div>
+                        <div class="title"><span>제품 색상</span></div>
                         <div class="picture">
                             <img src="./images/제품상세-의자컬러.png" alt="color_chair">
                         </div>
                     </div>
                     <div class="description">
-                        <div class="title"><span>설명</span></div>
+                        <div class="title"><span>제품 설명</span></div>
                         <div class="content">
-                            <div class="one">
-                                <img src="./images/제품상세-설명버튼1.png" alt="one">
-                                <span><b>뒤로 기대어도 편안히</b><br><br>
-                                <b>젖혀지는 틸트설계</b><br><br><br>
-                                좌판과 요추, 그리고 등받이가<br><br>
-                                <b class="middle_content">아이 중심으로 몸의 균형을 잡아줄 수<br><br>
-                                있도록 설계</b>되었습니다.
-                                </span>
-                            </div>
-                            <div class="two">
-                                <div class="left">
-                                    <img src="./images/제품상세-설명이미지1.png" alt="two">
+                            <div class="content_top">
+                                <div class="one">
+                                    <img src="./images/제품상세-설명버튼1.png" class="btn" alt="one">
+                                    <span><b>뒤로 기대어도 편안히</b><br><br>
+                                    <b>젖혀지는 틸트설계</b><br><br><br>
+                                    좌판과 요추, 그리고 등받이가<br><br>
+                                    <b class="middle_content">아이 중심으로 몸의 균형을 잡아줄 수<br><br>
+                                    있도록 설계</b>되었습니다.
+                                    </span>
+                                    <img src="./images/제품상세-설명이미지1.png" alt="one">
                                 </div>
-                                <div class="right">
-                                    <img src="./images/제품상세-설명버튼2.png" alt="two">
+                                <div class="two">
+                                    <img src="./images/제품상세-설명버튼2.png" class="btn" alt="two">
                                     <span><b>90º로 젖혀지는<br><br>
                                     팔 받침대</b><br><br><br>
                                     아이가 팔을 받치치 않을 때,<br><br>
                                     <b class="middle_content">쉽게 뒤로 젖혀</b> 활동 영역을 넓힐 수 있습니다.
                                     </span>
+                                    <img src="./images/제품상세-설명이미지2.png" alt="two">
                                 </div>
                             </div>
-                            <div class="three">
-                                <div class="left">
-                                    <img src="./images/제품상세-설명버튼3.png" alt="">
-                                    <div class="content">
+                            <div class="content_bottom">
+                                <div class="three">
+                                    <img src="./images/제품상세-설명버튼3.png" class="btn" alt="three">
+                                    <div class="three_content">
                                         <span><b>아이의 체격에 따른<br><br>
                                         높낮이 조절 기능</b><br><br><br><br>
                                         아이의 키, 체격에 따라<br><br>
-                                        의자의 높낮이를 <b>조절할 수 있습니다.</b>
+                                        의자의 높낮이를 <b class="middle_content">조절할 수 있습니다.</b>
                                         </span>
                                     </div>
+                                    <img src="./images/제품상세-설명이미지3.png" alt="three">
                                 </div>
-                                <div class="right">
-                                    <img src="./images/제품상세-설명이미지2.png" alt="">
-                                </div>
-                            </div>
-                            <div class="four">
-                                <div class="left">
-                                    <img src="./images/제품상세-설명이미지3.png" alt="">
-                                </div>
-                                <div class="right">
-                                    <img src="./images/제품상세-설명버튼4.png" alt="">
-                                    <span><b>땀이 차지않는 통기성<br><br>등받이 메쉬소재</b><br><br><br><br>
-                                    신축성과 통기성이 뛰어난 메쉬소재로,<br><br>
-                                    열과 수분을 분산시켜<br><br>
-                                    <b class="middle_content">체온을 최적의 상태로 유지시켜주며<br><br>
-                                    등에 땀이 차지 않게</b>합니다.
-                                    </span>
+                                <div class="four">
+                                    <img src="./images/제품상세-설명버튼4.png" class="btn" alt="four">
+                                    <div class="four_content">
+                                        <span><b>땀이 차지않는 통기성<br><br>등받이 메쉬소재</b><br><br><br><br>
+                                        신축성과 통기성이 뛰어난 메쉬소재로,<br><br>
+                                        열과 수분을 분산시켜<br><br>
+                                        <b class="middle_content">체온을 최적의 상태로 유지시켜주며<br><br>
+                                        등에 땀이 차지 않게</b>합니다.
+                                        </span>
+                                    </div>
+                                    <img src="./images/제품상세-설명이미지4.png" alt="three">
                                 </div>
                             </div>
                         </div>
@@ -432,7 +452,7 @@
     <!-- //Q&A_line -->
 
     <!-- Q&A -->
-    <div id="qAnda">
+    <div id="qAnda" class="location">
         <div class="container">
             <div class="row">
                 <div class="qAnda">
@@ -445,7 +465,7 @@
                                 <span><b>몇 살까지 사용 가능한가요?</b></span><br><br><br>
                             </div>
                             <div class="content">
-                                <span>꿍디의 사용 구너장 연령은 유치원-초등학생이며,<br><br>
+                                <span>꿍디의 사용 권장 연령은 유치원-초등학생이며,<br><br>
                                 사용 권장 신장은 110cm ~ 160cm 입니다.<br><br>
                                 (연령대는 성장에 따라 달라질 수 있다는 점 감안해 주세요.)
                                 </span>
@@ -468,8 +488,8 @@
                                 <span><b>직접 조립해야 하나요?</b></span><br><br><br>
                             </div>
                             <div class="content">
-                                <span>꿍디는 DIY 제품으로, 간단하게 조립이 가능<br><br>
-                                조립 방법은 페이지에 기재되어 있습니다.
+                                <span>꿍디는 DIY 제품으로, 간단하게 조립이 가능합니다<br><br>
+                                조립 방법은 제품과 함께 포장 박스에 동봉되어 배송되니 참고하여 주시길 바랍니다.
                                 </span>
                             </div>
                         </div>
@@ -484,21 +504,27 @@
         <div class="container">
             <div class="row">
                 <div class="footer">
-                    <span>
-                        <b>주식회사 겟위즈</b><br><br>
-                        서울특별시 금천구 가산디지털1로 181<br><br>
-                        (가산 더블유센터) 802호<br><br><br>
-                        대표 : 권연우<br><br>
-                        사업자등록번호 : 647-87-00794<br><br><br>
-                        통신판매업신고번호 : 제2019-서울금천-1648호<br><br><br>
-                        메일 : getwis88@gmail.com<br><br>
-                        호스팅제공 : 엔에이치엔커머스(주)<br><br><br>
-                        copyright. 2022. ggungd.com.<br><br>
-                        All rights reserved.
-                    </span>
+                    <div class="top">
+                        <span class="name">주식회사 엠넥트</span>
+                        <div class="adress">
+                            <span class="title">주소  </span>
+                            <span class="content">서울특별시 금천구 가산디지털1로 171 (가산SKV1센터 305-324호)</span>
+                        </div>
+                        <div class="number">
+                            <span class="title">사업자번호  </span>
+                            <span class="content">349-88-02430</span>
+                        </div>
+                        <div class="email">
+                            <span class="title">E-mail  </span>
+                            <span class="content">mnnect@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="bottom">COPYRIGHT.GGUNGD.COM. ALL RIGHTS RESERVED.</div>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div class="top_btn"><i class="fa-solid fa-circle-up"></i></div>
 </body>
 </html>
